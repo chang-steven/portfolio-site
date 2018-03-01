@@ -4,117 +4,162 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>StevenChang.tech</title>
-      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
-      <link href="float.css" rel="stylesheet" type="text/css">
-      <link href="main.css" rel="stylesheet" type="text/css">
-      <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="jquery.scrollify.js"></script>
-  <script src="typed.min.js"></script>
-  <script src="index.js"></script>
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="float.css" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="jquery.scrollify.js"></script>
+    <script src="typed.min.js"></script>
+    <script src="index.js"></script>
+  </head>
   <body>
     <nav role="navigation">
-      <ul class="nav-bar">
+      <ul class="nav-bar" id="menu">
         <li id="link-1"><a href="#home">home</a></li>
         <li id="link-2"><a href="#about">about</a></li>
         <li id="link-3"><a href="#projects">projects</a></li>
+        <li class="link-4"><a href="#contact">contact</a></li>
       </ul>
     </nav>
-    <header class="divider" data-section-name="home" id="home-section">
+
+    <header class="divider section" data-section-name="home"
+    id="home-section">
       <h1>Hi, I'm Steven!</h1>
-
-      <h2>full-stack developer</h2>
-
+      <div class="typing-container">
+        <h2 id="curly-left">{</h2>
+        <h2 id="typing-window"><span id="typing-prompt"><span></h2>
+        <h2 id="curly-right">}</h2>
+      </div>
       <h2>who builds innovative, and simple solutions.</h3>
 
-        <div class="element">
-
-        </div>
-
-
-
-      <div id="typed-strings">
-    <p>Typed.js is a <strong>JavaScript</strong> library.</p>
-    <p>It <em>types</em> out sentences.</p>
-</div>
-<span id="typed"></span>
-
-
+      <div class="contact-header">
+        <a href="https://www.linkedin.com/in/stevenchangdev/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin contact-icon"></i></a>
+        <a href="https://github.com/chang-steven/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github-square contact-icon"></i></a>
+        <a class="link-4" href="#contact">
+          <i class="fas fa-envelope-square contact-icon"></i></a>
+      </div>
     </header>
     <main role="main">
-      <div class="row">
-        <section data-section-name="about" id="about-section" class="col-12 divider">
-          <h2>About Me</h2>
-          <p>I've always been fascinated with building things, understanding how they work and building them better.  In a previous career I worked as an orthopedic physical therapist for 8 years, focusing on identifying and restoring impairment in people's movement and function.  But it was my love for building and developing that led me down this path of change.  One of the things that I love most about coding is the supreme sense of satisfaction that comes with solving a problem or seeing an idea move from imagination to reality on the page.</p>
 
-          <p>When I'm not writing code, checking up on the latest libraries or attempting to coax my front and back ends to get along, you'll probably find me enjoying the great outdoors.  I love exercising, weight-training, every sport with a ball, running, snowboarding, and I'm always looking for a new adventure to try.  I'm passionate about people, enjoy playing guitar, learning and talking about life and (of course) sports. </p>
+      <div class="row">
+        <section  id="about-section" data-section-name="about" class="col-12 divider section">
+          <h2>About Me</h2>
+          <p><span class="about-logo"><i class="fas fa-wrench"></i></span>   I've always been fascinated with building things, understanding how they work and building them better.</p>
+
+          <p><span class="about-logo"><i class="fas fa-desktop"></i></span>   I write simple and coherent code, building full-stack JavaScript applications with experience in MongoDB, Express, React/Redux, and Node.js to name a few.</p>
+
+          <p><span class="about-logo"><i class="fas fa-medkit"></i></span>   In a previous career I worked as an orthopedic physical therapist for 8 years, focusing on identifying and restoring impairment in individual's movement and function.</p>
+
+          <p><span class="about-logo"><i class="fas fa-lightbulb"></i></span>   But it was my passion for building and development that changed my career path.  One of the things that I love most about coding is the supreme sense of satisfaction that comes with solving a problem or seeing an idea move from imagination to reality on the page.</p>
+
+          <p><span class="about-logo"><i class="fas fa-basketball-ball"></i></span>   When I'm not writing code, you'll probably find me enjoying the great outdoors.  I love exercising, weight-training, every sport with a ball, running, snowboarding, and I'm always looking for a new adventure to try.  I'm passionate about people, enjoy playing guitar, learning and talking about life and (of course) sports. </p>
         </section>
       </div>
 
-
       <div class="row">
-        <section class="col-12 divider" data-section-name="projects">
+        <section class="col-12 divider section" data-section-name="projects">
           <div class="project-header-container">
-            <h2 class="project-title">HEARTSTRONG</h2>
+            <a href="https://heartstrong.netlify.com/" target="_blank" rel="noopener noreferrer"><h2 class="project-title">HEARTSTRONG</h2></a>
             <div class="project-tags">
               <p>| React | Redux |  Chart.js | Nodejs | Express | MongoDB | Mongoose |</p>
-            </div>
-          </div>
-          <div class="project-img">
-            <img src="http://via.placeholder.com/640x480">
-          </div>
-
-          <div class="project-brief">
-            <p>HEARTSTRONG is a personal exercise tracker, helping you log exercise sessions ensuring you reap the benefits of cardiovascular fitness.  Regular exercise is difficult, but HEARTSTRONG provides visual analysis about minutes exercised per session and displays data about the types of activities performed using Chart.js, helping you keep on track.  You can dynamically add new types of activities and exercise sessions, and see a lifetime log of all previous exercise.</p>
-          </div>
-        </section>
-      </div>
-
-      <div class="row">
-        <section class="col-12 divider" data-section-name="projects-2">
-          <div class="project-header-container">
-            <h2 class="project-title">Munch Minder</h2>
-            <div class="project-tags">
-              <p>| Node.js | Express | Mongoose | MongoDB | Passport | bcryptjs | Amazon S3 | /</p>
             </div>
           </div>
 
           <div class="project-content-container">
             <div class="project-img">
-              <img src="http://via.placeholder.com/640x480">
+              <a href="https://heartstrong.netlify.com/" target="_blank" rel="noopener noreferrer"><img src="images/heartstrong.jpeg" alt="screenshot of HEARTSTRONG app"></a>
             </div>
+
             <div class="project-brief">
-              <p>Munch Minder is a versatile photo blog and personal space for detailing your most recent culinary escapades, bragging to your friends about homemade creations, or simply logging what you ate or drank in an intuitive and easy to use way.  Follow the tutorial to create an account and post your first munch. Then, simply add friends to share and show what you've been enjoying!</p>
+              <p><strong>HEARTSTRONG</strong> is a personal exercise tracker, helping you log exercise sessions ensuring you reap the benefits of cardiovascular fitness.  Regular exercise is difficult, but <strong>HEARTSTRONG</strong> provides visual analysis about minutes exercised per session and displays data about the types of activities performed using Chart.js, helping you keep on track.  You can dynamically add new types of activities and exercise sessions, and see a lifetime log of all previous exercise.</p>
             </div>
           </div>
-
         </section>
       </div>
 
       <div class="row">
-        <section class="col-12 divider" data-section-name="projects-3">
+        <section class="col-12 divider section" data-section-name="projects-2">
+          <div class="project-header-container">
+            <a href="https://munch-minder.herokuapp.com/" target="_blank" rel="noopener noreferrer"><h2 class="project-title">Munch Minder</h2></a>
+            <div class="project-tags">
+              <p>| Node.js | Express | Mongoose | MongoDB | Passport | bcryptjs | Amazon S3 | </p>
+            </div>
+          </div>
+
+          <div class="project-content-container">
+            <div class="project-img">
+              <a href="https://munch-minder.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src="http://via.placeholder.com/640x480" alt="screenshot of Munch Minder application"></a>
+
+            </div>
+            <div class="project-brief">
+              <p><strong>Munch Minder</strong> is a versatile photo blog and personal space for detailing your most recent culinary escapades, bragging to your friends about homemade creations, or simply logging what you ate or drank in an intuitive and easy to use way.  Follow the tutorial to create an account and post your first munch. Then, simply add friends to share and show what you've been enjoying!</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="col-12 divider section" data-section-name="projects-3">
 
           <div class="project-header-container">
-            <h2 class="project-title">planIt</h2>
+            <a href="https://chang-steven.github.io/planIt/" target="_blank" rel="noopener noreferrer"><h2 class="project-title">planIt</h2></a>
             <div class="project-tags">
               <p>| Open API Use | AJAX Calls | jQuery traversal & DOM manipulation |</p>
             </div>
           </div>
 
-          <div class="project-img">
-            <img src="http://via.placeholder.com/640x480">
+          <div class="project-content-container">
+            <div class="project-img">
+              <a href="https://chang-steven.github.io/planIt/" target="_blank" rel="noopener noreferrer"><img src="images/planit.jpeg" alt="screenshot of PlanIt application"></a>
+            </div>
+
+            <div class="project-brief">
+              <p><strong>planIt</strong> is the ideal weekend getaway companion, making it easy to plan and go. Simply input the destination you want to go, and <strong>planIt</strong> will show you the 3-day weather forecast from the Weather Underground API and give you an estimated drive time and distance based on your current geolocation using the Google Distance Matrix API. For food and fun, <strong>planIt</strong> will show you interactive windows of the top 10 results of local fun spots and best eats around town based on reviews and check-ins from the FourSquare API and map them on a Google map centered on your desired destination.</p>
+            </div>
           </div>
 
-          <div class="project-brief">
-            <p>planIt is the ideal weekend getaway companion, making it easy to plan and go. Simply input the destination you want to go, and planIt will show you the 3-day weather forecast from the Weather Underground API and give you an estimated drive time and distance based on your current geolocation using the Google Distance Matrix API. For food and fun, planIt will show you interactive windows of the top 10 results of local fun spots and best eats around town based on reviews and check-ins from the FourSquare API and map them on a Google map centered on your desired destination.</p>
-          </div>
         </section>
       </div>
     </main>
-   <footer role="content-info" class="footer" data-section-name="contact">Footer</footer>
+
+    <footer role="content-info" class="footer" data-section-name="contact">
+      <div id="footer-content">
+        <h3>Like My Work?</h3>
+
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/stevenchangdev/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin contact-icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/stevenchangdev/" target="_blank" rel="noopener noreferrer">
+            <p>Let's Connect</p>
+          </a>
+        </div>
+
+        <div class="github">
+          <a href="https://github.com/chang-steven/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github-square contact-icon"></i>
+          </a>
+          <a href="https://github.com/chang-steven/" target="_blank" rel="noopener noreferrer">
+            <p>chang-steven</p>
+          </a>
+        </div>
+
+        <div class="email">
+          <a href="mailto:steven.chang.dev@gmail.com">
+            <i class="fas fa-envelope-square contact-icon"></i>
+          </a>
+          <a href="mailto:steven.chang.dev@gmail.com">
+            <p>steven.chang.dev@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

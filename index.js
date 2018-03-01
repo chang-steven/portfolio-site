@@ -7,15 +7,10 @@ $(function() {
       scrollSpeed: 1100,
       offset : 0,
       scrollbars: true,
-      // standardScrollElements: "",
-      setHeights: true,
+      setHeights: false,
       overflowScroll: true,
       updateHash: true,
-      touchScroll:true,
-      // before:function() {},
-      // after:function() {},
-      // afterResize:function() {},
-      // afterRender:function() {}
+      touchScroll: true,
     });
 
     $('#link-1').click((e) => {
@@ -32,17 +27,17 @@ $(function() {
     $('#link-3').click((e) => {
       e.preventDefault();
       $.scrollify.move("#projects");
-
     })
 
-    var typed = new Typed('.element', {
-      stringsElement: '#typed-strings'
- });
+    $('.link-4').click((e) => {
+      e.preventDefault();
+      $.scrollify.move("#contact");
+    })
 
+    const typed = new Typed('#typing-prompt', {
+      strings: ["", "full-stack developer ^1000", "lifelong learner ^1000", "UI|UX enthusiast ^1000", "health specialist ^1000", "sports fanatic ^1000", "adventure seeker"],
+      typeSpeed: 60,
+      smartBackspace: true,
+      loop: true,
+    });
 });
-
-
-// function moveToAbout() {
-//   console.log('move to about');
-//   // $.scrollify.move("#about");
-// }

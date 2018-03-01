@@ -4,18 +4,19 @@
 
 body {
   font-family: 'Lato', sans-serif;
-/*
-  font-family: "Open Sans",
-  sans-serif; */
   font-size: 20px;
   color: #444;
   text-align: center;
   line-height: 1.5;
 }
 
+p {
+  font-size: .85em;
+}
+
 nav,
 footer {
-  /* padding: 1% 0; */
+  padding: 0;
   background-color: #aaa;
 }
 
@@ -28,12 +29,13 @@ nav {
 }
 
 header {
-  padding: 12% 0;
+  padding-top: 100px;
 }
+
 
 section {
   min-height: 200px;
-  padding: 10% 0;
+  padding: 14% 0;
   background-color: #bbb;
   border: 1px solid black;
 }
@@ -44,12 +46,16 @@ section:nth-child(even) {
 
 .row {
   text-align: center;
-  /* height: 500px; */
+}
+
+.project-header-container, .project-content-container {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .project-img {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 12px 1%;
 }
 
 .project-img img {
@@ -73,41 +79,159 @@ h1 {
   font-weight: 100;
 }
 
-
 .nav-bar li {
   display: inline-block;
-  margin: 0 20px;
+  font-size: 0.9em;
+  margin: 0 4px;
 }
 
-#about {
+#about-section {
   text-align: justify;
 }
 
+#about-section p {
+  padding: 1% 5%;
+  font-size: .9em;
+}
+
+#about-section h2 {
+  margin-left: 5%;
+}
+
+#curly-left, #typing-window, #curly-right {
+  display: inline-block;
+}
+
+#typing-window {
+  width: 400px;
+}
+
+.typed-cursor {
+  height: 45px;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.contact-header {
+  font-size: 2em;
+  margin: 100px auto;
+}
+
+.contact-header a {
+  text-decoration: none;
+}
+
+.contact-icon {
+  margin: 8px;
+}
+
+.contact-icon:hover {
+  color: orange;
+}
+
+.about-logo {
+  font-size: 1.3em;
+}
+
+#footer-content svg {
+  vertical-align: middle;
+
+}
+
+.linkedin, .github, .email {
+  vertical-align: middle;
+}
+
+#footer-content p {
+  display: inline-block;
+}
+
+#footer-content h3, p {
+  margin: 0 auto;
+}
+
+#footer-content h3 {
+  padding-top: 20px;
+}
+
+#footer-content a {
+  text-decoration: none;
+}
+
+.contact-icon {
+  font-size: 2em;
+}
+
+
+ @media only screen and (max-width: 800px){
+   #typing-window {
+     width: 300px;
+   }
+
+
+
+ }
+
+
+
 @media only screen and (min-width: 800px) {
-  /* .project-header-container {
-    width: 100%;
-  } */
+
+  p {
+    font-size: 1em;
+  }
 
   .project-title, .project-tags {
     display: inline-block;
-    width: 48%;
+    width: 48.5%;
   }
-
-  /* .project-title {
-    width: 35%;
-  }
-
-  .project-tags {
-    width: 60%;
-  } */
 
   .project-img, .project-brief {
     display: inline-block;
-    width: 50%;
+    width: 48.5%;
   }
 
   .project-img {
-    margin-right: 16px;
+    margin: 0 16px 0 0;
+    /* margin-right: 16px; */
   }
+
+  .contact-icon {
+    margin: 16px;
+  }
+
+  section {
+    padding: 10% 0;
+  }
+
+  .contact-header {
+    font-size: 2.4em;
+  }
+
+  .nav-bar li {
+    margin: 0 20px;
+    font-size: 1em;
+  }
+
+  .linkedin, .github {
+    display: inline-block;
+  }
+
 
 }
