@@ -40,4 +40,21 @@ $(function() {
       smartBackspace: true,
       loop: true,
     });
+
+
+
+  var scrollTop = 0;
+  $(window).scroll(function(){
+    scrollTop = $(window).scrollTop();
+    if (scrollTop >= 100) {
+      $('#top-nav').addClass('scrolled-nav');
+    } else if (scrollTop < 100) {
+      $('#top-nav').removeClass('scrolled-nav');
+    }
+});
+
+
+
+
+
 });
