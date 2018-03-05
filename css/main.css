@@ -3,28 +3,30 @@
 }
 
 body {
-  /* font-family: 'Lato', sans-serif; */
-  /* font-family: 'Montserrat', sans-serif; */
   font-family: 'Raleway', sans-serif;
-
+  background-color: #262d31;
+  /* background-color: #404A51; */
+  color: #cccccc;
   font-size: 20px;
-  color: #444;
   text-align: center;
   line-height: 1.5;
 }
 
-p {
-  font-size: .9em;
-  font-weight: 400;
+section {
+  padding: 14% 0;
 }
 
-nav,
-footer {
-  padding: 0;
-  background-color: #404A51;
+p {
+  font-size: .9em;
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 100;
 }
 
 nav {
+  padding: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -33,8 +35,8 @@ nav {
 }
 
 .scrolled-nav {
-  /* background-color: #ff8a00; */
-  background-color: #ffc457;
+  background-color: #adeae2;
+  /* background-color: #63e9d8; */
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
   box-shadow: 0 8px 6px -6px #999;
@@ -48,40 +50,38 @@ nav {
   color: gray;
 }
 
+.nav-bar a {
+  color: #cccccc;
+}
+
+.nav-bar a:hover, footer a:hover, .project-header-container h2:hover, .contact-icon:hover {
+  -webkit-filter: hue-rotate(15deg) contrast(1.9) brightness(0.95) saturate(1.75);
+  filter: hue-rotate(15deg) contrast(1.9) brightness(0.95) saturate(1.75);
+  transition: -webkit-filter 0.25s linear, filter 0.25s linear;
+}
+
 header {
+  background-image: url('../images/gray-wood-vert.jpg');
   padding-top: 100px;
-  background-color: #404A51;
 }
 
 header h1 {
-  color: #49B7A9
+  color: #63e9d8;
 }
 
-.nav-bar a, footer a {
-  color: #cccccc;
-}
-
-.nav-bar a:hover, footer a:hover {
-  color: #ffc457;
-}
-
-.typing-container h2, h3 {
-  color: #cccccc;
-  font-weight: 200;
+.typing-container h2, .typing-container h3 {
+  color: white;
+  font-weight: 400;
 }
 
 #home-bottom-title {
-  color: #008dff;
+  color: #00b3ff;
   font-weight: 200;
 }
 
-section {
-  min-height: 200px;
-  padding: 14% 0;
-}
-
-section:nth-child(even) {
-  background-color: #ddd;
+#about-section h2 {
+  color: #63e9d8;
+  font-weight: 200;
 }
 
 .row {
@@ -115,10 +115,6 @@ section:nth-child(even) {
 .project-brief p {
   margin: 0;
   font-weight: 300;
-}
-
-h1 {
-  font-weight: 100;
 }
 
 .nav-bar li {
@@ -185,12 +181,17 @@ h1 {
   color: #cccccc;
 }
 
-.contact-icon:hover {
-  color: #ffc457;
-}
-
 .about-logo {
   font-size: 1.3em;
+}
+
+footer {
+  padding: 0;
+  background-image: url('../images/gray-wood-vert.jpg');
+}
+
+#footer-content {
+  font-weight: 300px;
 }
 
 #footer-content svg {
@@ -206,15 +207,18 @@ h1 {
 }
 
 #footer-content h3, p {
+  font-weight: 300;
   margin: 0 auto;
 }
 
 #footer-content h3 {
+  color: #63e9d8;
   padding-top: 20px;
 }
 
 #footer-content a {
   text-decoration: none;
+  color: white;
 }
 
 .contact-icon {
@@ -233,6 +237,33 @@ h1 {
   font-weight: 300;
 }
 
+.project-title {
+  color: #cccccc;
+  font-weight: 200;
+}
+
+.project-title strong {
+  font-weight: 400;
+}
+
+.project-header-container a {
+  text-decoration: none;
+}
+
+.project-logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+#munch-minder-logo img {
+  vertical-align: middle;
+}
+
+.project-logo img {
+  width: 100%;
+}
 
 @media only screen and (max-width: 800px){
 

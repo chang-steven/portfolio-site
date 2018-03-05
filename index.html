@@ -4,28 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>StevenChang.tech</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
-    <link href="float.css" rel="stylesheet" type="text/css">
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="css/float.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <script src="jquery.scrollify.js"></script>
-    <script src="typed.min.js"></script>
+    <script src="vendors/jquery.scrollify.js"></script>
+    <script src="vendors/typed.min.js"></script>
     <script src="index.js"></script>
   </head>
   <body>
     <nav role="navigation" id="top-nav">
       <ul class="nav-bar" id="menu">
-        <li id="link-1"><a href="#home">home</a></li>
-        <li id="link-2"><a href="#about">about</a></li>
-        <li id="link-3"><a href="#projects">projects</a></li>
-        <li class="link-4"><a href="#contact">contact</a></li>
+        <li id="link-1"><a href="#home">Home</a></li>
+        <li id="link-2"><a href="#about">About</a></li>
+        <li id="link-3"><a href="#projects">Projects</a></li>
+        <li class="link-4"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -68,7 +66,12 @@
       <div class="row">
         <section class="col-12 divider section" data-section-name="projects">
           <div class="project-header-container">
-            <a href="https://heartstrong.netlify.com/" target="_blank" rel="noopener noreferrer"><h2 class="project-title">HEARTSTRONG</h2></a>
+            <a href="https://heartstrong.netlify.com/" target="_blank" rel="noopener noreferrer">
+              <h2 class="project-title">
+                <div class="project-logo">
+                  <img src="images/logos/heartstrong-logo.png" alt="heartstrong logo">
+                </div>
+                HEART<strong>STRONG</strong></h2></a>
             <div class="project-tags">
               <p>| React | Redux |  Chart.js | Nodejs | Express | MongoDB | Mongoose |</p>
             </div>
@@ -81,7 +84,7 @@
 
             <div class="project-brief">
 
-              <p>HEARTSTRONG is a full-stack JavaScript app for tracking personal cardiovascular fitness sessions providing visual analysis of all activity.</p>
+              <p>HEART<strong>STRONG</strong> is a full-stack JavaScript app for tracking personal cardiovascular fitness sessions providing visual analysis of all activity.</p>
               <ul class="brief-list">
                 <li>Client side was built using create-react-app</li>
                 <li>Utilizes Promise middleware for asynchronous AJAX calls</li>
@@ -91,7 +94,6 @@
                 <li>Mongoose for object modeling for the MongoDB database.</li>
               </ul>
 
-              <!-- <p><strong>HEARTSTRONG</strong> is a personal exercise tracker, helping you log exercise sessions ensuring you reap the benefits of cardiovascular fitness.  Regular exercise is difficult, but <strong>HEARTSTRONG</strong> provides visual analysis about minutes exercised per session and displays data about the types of activities performed using Chart.js, helping you keep on track.  You can dynamically add new types of activities and exercise sessions, and see a lifetime log of all previous exercise.</p> -->
             </div>
           </div>
         </section>
@@ -100,7 +102,11 @@
       <div class="row">
         <section class="col-12 divider section" data-section-name="projects-2">
           <div class="project-header-container">
-            <a href="https://munch-minder.herokuapp.com/" target="_blank" rel="noopener noreferrer"><h2 class="project-title">Munch Minder</h2></a>
+            <a href="https://munch-minder.herokuapp.com/" target="_blank" rel="noopener noreferrer"><h2 class="project-title">
+              <div id="munch-minder-logo" class="project-logo">
+                <img src="images/logos/munchminder-logo.png" alt="munch minder logo">
+              </div>
+              Munch Minder</h2></a>
             <div class="project-tags">
               <p>| Node.js | Express | Mongoose | MongoDB | Passport | bcryptjs | Amazon S3 | </p>
             </div>
@@ -122,7 +128,6 @@
                 <li>Event listeners trigger asynchronous AJAX calls to API processing CRUD operations</li>
               </ul>
 
-              <!-- <p><strong>Munch Minder</strong> is a versatile photo blog and personal space for detailing your most recent culinary escapades, bragging to your friends about homemade creations, or simply logging what you ate or drank in an intuitive and easy to use way.  Follow the tutorial to create an account and post your first munch. Then, simply add friends to share and show what you've been enjoying!</p> -->
             </div>
           </div>
         </section>
@@ -132,7 +137,11 @@
         <section class="col-12 divider section" data-section-name="projects-3">
 
           <div class="project-header-container">
-            <a href="https://chang-steven.github.io/planIt/" target="_blank" rel="noopener noreferrer"><h2 class="project-title">planIt</h2></a>
+            <a href="https://chang-steven.github.io/planIt/" target="_blank" rel="noopener noreferrer"><h2 class="project-title">
+              <div class="project-logo">
+                <img src="images/logos/planit-logo.png" alt="planit logo">
+              </div>
+              planIt</h2></a>
             <div class="project-tags">
               <p>| Open API Use | AJAX Calls | jQuery traversal & DOM manipulation |</p>
             </div>
@@ -153,8 +162,6 @@
                 <li>A Google map centered on your desired destination with linked flags for the top food and fun places</li>
               </ul>
 
-              <!--
-              <p><strong>planIt</strong> is the ideal weekend getaway companion, making it easy to plan and go. Simply input the destination you want to go, and <strong>planIt</strong> will show you the 3-day weather forecast from the Weather Underground API and give you an estimated drive time and distance based on your current geolocation using the Google Distance Matrix API. For food and fun, <strong>planIt</strong> will show you interactive windows of the top 10 results of local fun spots and best eats around town based on reviews and check-ins from the FourSquare API and map them on a Google map centered on your desired destination.</p> -->
             </div>
           </div>
 

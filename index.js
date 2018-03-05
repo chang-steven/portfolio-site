@@ -21,7 +21,6 @@ $(function() {
     $('#link-2').click((e) => {
       e.preventDefault();
       $.scrollify.move("#about");
-
     })
 
     $('#link-3').click((e) => {
