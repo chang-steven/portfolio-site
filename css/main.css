@@ -5,7 +5,6 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #262d31;
-  /* background-color: #404A51; */
   color: #cccccc;
   font-size: 20px;
   text-align: center;
@@ -35,19 +34,7 @@ nav {
 }
 
 .scrolled-nav {
-  background-color: #adeae2;
-  /* background-color: #63e9d8; */
-  -webkit-box-shadow: 0 8px 6px -6px #999;
-  -moz-box-shadow: 0 8px 6px -6px #999;
-  box-shadow: 0 8px 6px -6px #999;
-}
-
-.scrolled-nav ul a {
-  color: #444;
-}
-
-.scrolled-nav ul a:hover {
-  color: gray;
+  background-color: #262d31;
 }
 
 .nav-bar a {
