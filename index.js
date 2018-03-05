@@ -1,4 +1,6 @@
 $(function() {
+
+  // Scrollify options
   $.scrollify({
       section : ".divider",
       sectionName : "section-name",
@@ -33,6 +35,7 @@ $(function() {
       $.scrollify.move("#contact");
     })
 
+// Typed.js options
   const typed = new Typed('#typing-prompt', {
     strings: ["", "full-stack developer ^1000", "lifelong learner ^1000", "UI|UX enthusiast ^1000", "health specialist ^1000", "sports fanatic ^1000", "adventure seeker"],
     typeSpeed: 60,
@@ -40,6 +43,7 @@ $(function() {
     loop: true,
   });
 
+// scroll navigation
   let scrollTop = 0;
   $(window).scroll(function(){
     scrollTop = $(window).scrollTop();
@@ -49,5 +53,4 @@ $(function() {
       $('#top-nav').removeClass('scrolled-nav');
     }
   });
-
 });
