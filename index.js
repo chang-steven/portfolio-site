@@ -18,21 +18,26 @@ $(function() {
     $('#link-1').click((e) => {
       e.preventDefault();
       $.scrollify.move("#home");
-    })
+    });
 
     $('#link-2').click((e) => {
       e.preventDefault();
       $.scrollify.move("#about");
-    })
+    });
 
     $('#link-3').click((e) => {
       e.preventDefault();
       $.scrollify.move("#projects");
-    })
+    });
 
     $('.link-4').click((e) => {
       e.preventDefault();
       $.scrollify.move("#contact");
+    });
+
+    $('.arrow').click((e) => {
+      e.preventDefault();
+      $.scrollify.move("#about");
     })
 
 // Typed.js options
