@@ -48,7 +48,7 @@ nav {
 }
 
 header {
-  background-image: url('../images/gray-wood-vert.jpg');
+  background-image: url('../images/darkblue-vert.jpg');
   padding-top: 100px;
 }
 
@@ -174,7 +174,7 @@ header h1 {
 
 footer {
   padding: 0;
-  background-image: url('../images/gray-wood-vert.jpg');
+  background-image: url('../images/darkblue-vert.jpg');
 }
 
 #footer-content {
