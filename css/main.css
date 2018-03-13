@@ -42,7 +42,7 @@ nav {
   color: #cccccc;
 }
 
-.nav-bar a:hover, footer a:hover, .project-header-container h2:hover, .contact-icon:hover, .arrow:hover {
+.nav-bar a:hover, footer a:hover, .project-header-container h2:hover, .contact-icon:hover, .arrow:hover, .title-line-github:hover {
   -webkit-filter: hue-rotate(15deg) contrast(1.9) brightness(0.95) saturate(1.75);
   filter: hue-rotate(15deg) contrast(1.9) brightness(0.95) saturate(1.75);
   transition: -webkit-filter 0.25s linear, filter 0.25s linear;
@@ -307,13 +307,20 @@ footer {
 .project-title {
   color: #cccccc;
   font-weight: 300;
+  display: inline-block;
+}
+
+.title-line-github {
+  margin-left: 10px;
 }
 
 .project-title strong {
   font-weight: 400;
+  color: #cccccc;
 }
 
-.project-header-container a {
+.title-line a {
+  color: #cccccc;
   text-decoration: none;
 }
 
@@ -331,8 +338,6 @@ footer {
 .project-logo img {
   width: 100%;
 }
-
-
 
 @media (min-height: 680px) {
   .header-inner {
@@ -355,7 +360,6 @@ footer {
   .arrow {
     display: block;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -390,7 +394,7 @@ footer {
     font-size: 1.5em;
   }
 
-  .project-title, .project-tags {
+  .title-line, .project-tags {
     display: inline-block;
     width: 48.5%;
   }
